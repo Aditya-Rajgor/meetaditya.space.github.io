@@ -1,0 +1,114 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: aileron, sans-serif;
+    line-height: 1.6;
+    background: black;
+    /* Light gray background */
+    background-size: cover;
+    background-position: center;
+}
+/* Define the font-face */
+@font-face {
+    font-family: 'MyFont';
+    src: url("MonaspaceArgon-Medium.woff2") format('woff2'),
+    url("MonaspaceArgon-Medium.woff2") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-family: "MyFont", sans-serif;
+}
+
+/* Container for centering and padding */
+.container {
+    width: 60%;
+    margin: 2% auto 2%;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* Header styles */
+header {
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+
+header h1 {
+    font-size: 2.5em;
+    color: white;
+    font-weight: bold;
+}
+
+header p {
+    font-family: 'MyFont';
+    font-size: 1.2em;
+    color: #666;
+    font-style: italic;
+}
+
+
+.footer a,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+    text-decoration-line: underline;
+    text-underline-offset: 8px;
+}
+
+.horizontalLine {
+    margin-bottom: 25px;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 408px) {
+
+    header h1 {
+        font-size: 1.8em !important;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .container {
+        width: 95% !important;
+        padding-bottom: 5px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+}
